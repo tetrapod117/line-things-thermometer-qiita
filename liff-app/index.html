@@ -1,0 +1,35 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+    <script src="liff.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gauge.js/1.3.6/gauge.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="liff.css" />
+    <!-- Graph -->
+  </head>
+
+  <body>
+    <!-- Title -->
+    <h2>LINE Things Thermometer</h2>
+    <hr />
+    <p>
+      <img id="loading-animation" class="" src="loading.gif" height="14px" />
+      <span id="status" class="inactive">Device disconnected</span>
+    </p>
+    <hr />
+    <div id="controls" class="hidden">
+      <!-- Device Info Table -->
+      <table class="device-info-table">
+        <tr>
+          <th class="device-info-cell device-info-key">現在の温度</th>
+          <td class="device-info-cell device-info-val" id="temperature">0</td>
+        </tr>
+      </table>
+      <canvas id="graph"></canvas>     
+      <hr />
+    </div>
+  </body>
+
+</html>
